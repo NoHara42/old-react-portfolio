@@ -1,0 +1,10 @@
+.container {
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.responsiveLogo {
+    max-width: 55%;
+    height: auto;
+}
