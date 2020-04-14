@@ -29,11 +29,11 @@ function App() {
 
         <section id="ContentsPage">
           <div class="contents-flex-grid">
-            <h1 class="contents-title">Portfolio Contents</h1>
-            <h1 class="contents-1">About Me</h1>
-            <h1 class="contents-2">Education</h1>
-            <h1 class="contents-3">Work Experience</h1>
-            <h1 class="contents-4">Show Case</h1>
+            <h1 class="contents-title contents-text">Portfolio Contents</h1>
+            <h1 class="contents-1 contents-text">About Me</h1>
+            <h1 class="contents-2 contents-text">Education</h1>
+            <h1 class="contents-3 contents-text">Work Experience</h1>
+            <h1 class="contents-4 contents-text">Show Case</h1>
           </div>
         </section>
         <section id="AboutMePage">

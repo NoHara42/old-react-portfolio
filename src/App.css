@@ -68,7 +68,7 @@ h1 {
   display: flex;
   width: 100%;
   justify-content: center;
-  animation: rise2 15s ease backwards;
+  animation: rise2 15s ease forwards;
 }
 .greeting {
   position: absolute;
@@ -155,7 +155,7 @@ h1 {
   }
 }
 #ContentsPage {
-  background: #d4211c;
+  background: radial-gradient(at 38% 60%, orangered, salmon);
 }
 .contents-flex-grid {
   display: grid;
@@ -166,22 +166,23 @@ h1 {
   height: 100%;
   margin: 50px;
 }
+.contents-text {
+  color: white;
+  text-shadow: 1px 1px 6px white;
+}
 .contents-title {
   justify-self: center;
-  color: #e9e112;
   grid-column: 1;
   grid-row: 1 / 5;
   font-size: 3vw;
 }
 .contents-1 {
-  color: #e9e112;
   justify-self: left;
   grid-column: 3;
   font-size: 2vw;
   font-weight: 400;
 }
 .contents-2 {
-  color: #e9e112;
   justify-self: left;
   grid-column: 3;
   font-size: 2vw;
@@ -189,7 +190,6 @@ h1 {
 
 }
 .contents-3 {
-  color: #e9e112;
   justify-self: left;
   grid-column: 3;
   font-size: 2vw;
@@ -197,14 +197,13 @@ h1 {
 
 }
 .contents-4 {
-  color: #e9e112;
   justify-self: left;
   grid-column: 3;
   font-size: 2vw;
   font-weight: 400;
 
 }
-@supports not (scroll-snap-type: y mandatory) {
+/* @supports not (scroll-snap-type: y mandatory) {
   .container {
     height: 100vh;
     overflow-y: auto;
@@ -212,7 +211,7 @@ h1 {
     scroll-behavior: smooth;
     scroll-snap-type: none;
   }
-}
+} */
 @media only screen and (max-width: 1024px) {
   .greeting {
     position: absolute;
