@@ -26,8 +26,15 @@ function App() {
             <div class="sky"/>
           </div>
         </section>
+
         <section id="ContentsPage">
-          <h1>Contents Page</h1>
+          <div class="contents-flex-grid">
+            <h1 class="contents-title">Portfolio Contents</h1>
+            <h1 class="contents-1">About Me</h1>
+            <h1 class="contents-2">Education</h1>
+            <h1 class="contents-3">Work Experience</h1>
+            <h1 class="contents-4">Show Case</h1>
+          </div>
         </section>
         <section id="AboutMePage">
           <h1>About Me Page</h1>

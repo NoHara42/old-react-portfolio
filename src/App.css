@@ -58,9 +58,6 @@ h1 {
   align-self: center;
 }
 
-#GreetingPage {
-
-}
 .animation-container {
   position: relative;
   width: 100%;
@@ -71,7 +68,7 @@ h1 {
   display: flex;
   width: 100%;
   justify-content: center;
-  animation: rise2 15s ease forwards;
+  animation: rise2 15s ease backwards;
 }
 .greeting {
   position: absolute;
@@ -157,28 +154,65 @@ h1 {
     opacity: 0.1;
   }
 }
-.gallery {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-evenly;
+#ContentsPage {
+  background: #d4211c;
 }
-.polaroids {
-  border-radius: 50%;
-  max-width: 40%;
-  height: auto;
+.contents-flex-grid {
+  display: grid;
+  grid-template-columns: 5fr 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 50px;
 }
-.tshirt {
-  max-width: 20%;
-  height: auto;
+.contents-title {
+  justify-self: center;
+  color: #e9e112;
+  grid-column: 1;
+  grid-row: 1 / 5;
+  font-size: 3vw;
 }
-.mail {
-  max-width: 85%;
-  height: auto;
+.contents-1 {
+  color: #e9e112;
+  justify-self: left;
+  grid-column: 3;
+  font-size: 2vw;
+  font-weight: 400;
 }
+.contents-2 {
+  color: #e9e112;
+  justify-self: left;
+  grid-column: 3;
+  font-size: 2vw;
+  font-weight: 400;
 
+}
+.contents-3 {
+  color: #e9e112;
+  justify-self: left;
+  grid-column: 3;
+  font-size: 2vw;
+  font-weight: 400;
+
+}
+.contents-4 {
+  color: #e9e112;
+  justify-self: left;
+  grid-column: 3;
+  font-size: 2vw;
+  font-weight: 400;
+
+}
+@supports not (scroll-snap-type: y mandatory) {
+  .container {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .greeting {
     position: absolute;
@@ -186,6 +220,6 @@ h1 {
     color: white;
     opacity: 0.8;
     font-family: "Mavon Pro", sans-serif;
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 }
