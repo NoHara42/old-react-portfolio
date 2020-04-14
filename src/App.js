@@ -6,28 +6,43 @@ function App() {
     <div class="App">
       <div class="container">
         <section id="LandingPage">
-          Landing Page
+          <div class="landing-flex-grid">
+            <img class="profile-picture" src={require("./assets/resizedprofilepicture.jpg")}></img>
+            <h1 class="name">Ned O'Hara</h1>
+            <h1 class="occupation">Developer / Visual Artist</h1>
+          </div>
         </section>
         <section id="GreetingPage">
-          Greeting Page
+          <div class="animation-container">
+            <div class="light"/>
+            <div class="dawn"/>
+            <div class="sea"/>
+            <div class="greeting-container">
+              <div class="greeting">Good morning</div>
+            </div>
+            <div class="sun-container">
+              <div class="sun"/>
+            </div>
+            <div class="sky"/>
+          </div>
         </section>
         <section id="ContentsPage">
-          Contents Page
+          <h1>Contents Page</h1>
         </section>
         <section id="AboutMePage">
-          About Me Page
+          <h1>About Me Page</h1>
         </section>
         <section id="EducationPage">
-          Education Page
+          <h1>Education Page</h1>
         </section>
         <section id="WorkExperiencePage">
-          Work Experience Page
+          <h1>Work Experience Page</h1>
         </section>
         <section id="ShowCasePage1">
-          Show Case 1
+          <h1>Show Case 1</h1>
         </section>
         <section id="ShowCasePage2">
-          Show Case 2
+          <h1>Show Case 2</h1>
           <p>Back to top.</p>
         </section>
                         
