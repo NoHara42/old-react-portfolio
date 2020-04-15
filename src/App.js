@@ -29,11 +29,15 @@ function App() {
 
         <section id="ContentsPage">
           <div class="contents-flex-grid">
-            <h1 class="contents-title contents-text">Portfolio Contents</h1>
-            <h1 class="contents-1 contents-text">About Me</h1>
-            <h1 class="contents-2 contents-text">Education</h1>
-            <h1 class="contents-3 contents-text">Work Experience</h1>
-            <h1 class="contents-4 contents-text">Show Case</h1>
+            <h1 class="contents-title">Portfolio Contents</h1>
+            <a href="#AboutMePage" class="contents-icon"><img class="contents-image" src={require("./assets/aboutme.svg")}></img></a>
+            <a class="contents-links" href="#AboutMePage"><h1 class="contents-text">About Me</h1></a>
+            <a class="contents-icon" href="#EducationPage"><img class="contents-image" src={require("./assets/education.svg")}></img></a>
+            <a class="contents-links" href="#EducationPage"><h1 class="contents-text">Education</h1></a>
+            <a class="contents-icon" href="#WorkExperiencePage"><img class="contents-image" src={require("./assets/workexperience.svg")}></img></a>
+            <a class="contents-links" href="#WorkExperiencePage"><h1 class="contents-text">Work Experience</h1></a>
+            <a class="contents-icon" href="#ShowCasePage1"><img class="contents-image" src={require("./assets/showcase.svg")}></img></a>
+            <a class="contents-links" href="#ShowCasePage1"><h1 class="contents-text">Show Case</h1></a>
           </div>
         </section>
         <section id="AboutMePage">
@@ -50,7 +54,7 @@ function App() {
         </section>
         <section id="ShowCasePage2">
           <h1>Show Case 2</h1>
-          <p>Back to top.</p>
+          <a href="#LandingPage"><p>Back to top.</p></a>
         </section>
                         
       </div>
