@@ -222,10 +222,10 @@ h2 {
   font-size: 20px;
 }
 #ContentsPage {
-  background: radial-gradient(at 66% 50%, white, lightgrey);
+  background: radial-gradient(at 50% 100%, white, lightgrey);
 }
 #AboutMePage {
-  background: radial-gradient(at 50% 50%, white, lightgrey);
+  background: radial-gradient(at 50% 0%, white, lightgrey);
 }
 #EducationPage {
   background: radial-gradient(at 50% 100%, white, lightgrey);
@@ -233,7 +233,14 @@ h2 {
 #WorkExperiencePage {
   background: radial-gradient(at 50% 0%, white, lightgrey);
 }
-#
+#ShowCasePage1 {
+  background: radial-gradient(at 50% 100%, white, lightgrey);
+
+}
+#ShowCasePage2 {
+  background: radial-gradient(at 50% 0%, white, lightgrey);
+
+}
 /* @supports not (scroll-snap-type: y mandatory) {
   .container {
     height: 100vh;

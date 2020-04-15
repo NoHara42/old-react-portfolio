@@ -24,7 +24,7 @@ function App() {
             <div class="dawn" />
             <div class="sea" />
             <div class="greeting-container">
-              <div class="greeting">Good morning</div>
+              <div class="greeting">Hello</div>
             </div>
             <div class="sun-container">
               <div class="sun" />
@@ -42,8 +42,8 @@ function App() {
             <a class="contents-links" href="#EducationPage"><h1 class="contents-text">Education</h1></a>
             <a class="contents-icon" href="#WorkExperiencePage"><img class="contents-image" src={require("./assets/workexperience.svg")}></img></a>
             <a class="contents-links" href="#WorkExperiencePage"><h1 class="contents-text">Work Experience</h1></a>
-            <a class="contents-icon" href="#ShowCasePage2"><img class="contents-image" src={require("./assets/showcase.svg")}></img></a>
-            <a class="contents-links" href="#ShowCasePage2"><h1 class="contents-text">Show Case</h1></a>
+            <a class="contents-icon" href="#ShowCasePage1"><img class="contents-image" src={require("./assets/showcase.svg")}></img></a>
+            <a class="contents-links" href="#ShowCasePage1"><h1 class="contents-text">Show Case</h1></a>
           </div>
         </section>
         <section id="AboutMePage">
@@ -62,13 +62,11 @@ function App() {
               <img class="flag-size" src={ukflag}></img>
               <h3 className="vertical-timeline-element-title">Completed A-Levels at Esher College</h3>
               <h4 className="vertical-timeline-element-subtitle">Surrey, England</h4>
-              <p>
-                A-Levels in:
-                <p />
-                ~ Mathematics, Physics, Chemistry (A-Levels)
-                <p />
-                ~ Geology (AS)
-              </p>
+              <p />
+              <div>A-Levels in:</div>
+              <p />
+              <div>~ Mathematics, Physics, Chemistry (A-Levels)</div>
+              <div>~ Geology (AS)</div>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
@@ -81,7 +79,10 @@ function App() {
               <img class="flag-size" src={deflag}></img>
               <h3 className="vertical-timeline-element-title">Studying Digital Humanities (B.Sc)</h3>
               <h4 className="vertical-timeline-element-subtitle">Leipzig, Germany</h4>
-              <p>Digital Humanities is a new field of research, which attempts to combine aspects of the computer sciences with social sciences.</p>
+              <p />
+              <div>What is DH?</div>
+              <p />
+              <div>Digital Humanities is a new field of research, which attempts to combine aspects of the computer sciences with social sciences.</div>
             </VerticalTimelineElement>
           </VerticalTimeline>
         </section>
@@ -98,10 +99,11 @@ function App() {
 
               <h3 className="vertical-timeline-element-title">Coworking Community Manager</h3>
               <h4 className="vertical-timeline-element-subtitle">Basislager Coworking, Leipzig</h4>
-              <p>~ Event management</p>
-              <p>~ Community management. (Offline and Online.)</p>
-              <p>~ Organisation of event formats.</p>
-              <p>~ Facilitation of creative culture principles and values.</p>
+              <p/>
+              <div>~ Event management</div>
+              <div>~ Community management. (Offline and Online.)</div>
+              <div>~ Organisation of event formats.</div>
+              <div>~ Facilitation of creative culture principles and values.</div>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
@@ -113,9 +115,10 @@ function App() {
 
               <h3 className="vertical-timeline-element-title">Student Researcher</h3>
               <h4 className="vertical-timeline-element-subtitle">Digital City Department, City of Leipzig</h4>
-              <p>~ Automation programming and the digitalisation of bureaucratic processes.</p>
-              <p>~ Project management and organisation of citizen-participation initiatives.</p>
-              <p>~ 'Smart City'-based research.</p>
+              <p/>
+              <div>~ Automation programming and the digitalisation of bureaucratic processes.</div>
+              <div>~ Project management and organisation of citizen-participation initiatives.</div>
+              <div>~ 'Smart City'-based research.</div>
 
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -128,9 +131,10 @@ function App() {
 
               <h3 className="vertical-timeline-element-title">Back-End Developer</h3>
               <h4 className="vertical-timeline-element-subtitle">eCommeleon</h4>
-              <p>~ Integrated Walmart marketplace, facilitating large transaction inserts to MySQL databases.</p>
-              <p>~ Built Windows Desktop Applications to facilitate this.</p>
-              <p>~ Responsible for writing technical documentation.</p>
+              <p/>
+              <div>~ Integrated Walmart marketplace, facilitating large transaction inserts to MySQL databases.</div>
+              <div>~ Built Windows Desktop Applications to facilitate this.</div>
+              <div>~ Responsible for writing technical documentation.</div>
             </VerticalTimelineElement>
           </VerticalTimeline>
         </section>
