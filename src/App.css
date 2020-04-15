@@ -24,6 +24,7 @@ section {
   width: 100%;
   height: 100%;
   scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 #LandingPage {
   background-image: url("./assets/northern-lights-3273425.jpg");
@@ -49,6 +50,11 @@ h1 {
   font-family: "Maven Pro", sans-serif;
   font-size: 40px;
   color: white;
+}
+h2 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 30px;
+  color: #013535;
 }
 .name {
   font-weight: 500;
@@ -123,6 +129,10 @@ h1 {
   top: 0;
 
 }
+.flag-size {
+  width: 40px;
+  height:40px;
+}
 .light {
   z-index: 10;
   position: absolute;
@@ -164,9 +174,6 @@ h1 {
     opacity: 0.1;
   }
 }
-#ContentsPage {
-  background: radial-gradient(at 38% 60%, white, lightgrey);
-}
 .contents-flex-grid {
   display: grid;
   grid-template-columns: 1fr 11fr 1fr 3fr 2fr 7fr;
@@ -178,13 +185,13 @@ h1 {
   margin: 50px;
 }
 .contents-text {
-  color: #1e2e3f;
+  color: #013535;
   font-size: 2vw;
   font-weight: 400;
   grid-column: 7;
 }
 .contents-title {
-  color: #1e2e3f;
+  color: #013535;
   grid-column: 2;
   grid-row: 1 / 5;
   font-size: 4vw;
@@ -195,7 +202,8 @@ h1 {
   grid-column: 5;
   width: 4vw;
   height: 4vh;
-  filter: invert(14%) sepia(74%) saturate(346%) hue-rotate(169deg) brightness(90%) contrast(92%);
+  filter: invert(15%) sepia(58%) saturate(800%) hue-rotate(134deg) brightness(96%) contrast(104%);
+  
 }
 .contents-links {
   justify-self: left;
@@ -204,9 +212,19 @@ h1 {
   width: 100%;
   height: 100%;
 }
-#AboutMePage {
-
+#ContentsPage {
+  background: radial-gradient(at 66% 50%, white, lightgrey);
 }
+#AboutMePage {
+  background: radial-gradient(at 50% 50%, white, lightgrey);
+}
+#EducationPage {
+  background: radial-gradient(at 50% 100%, white, lightgrey);
+}
+#WorkExperiencePage {
+  background: radial-gradient(at 50% 0%, white, lightgrey);
+}
+#
 /* @supports not (scroll-snap-type: y mandatory) {
   .container {
     height: 100vh;
@@ -225,4 +243,7 @@ h1 {
     font-family: "Mavon Pro", sans-serif;
     font-size: 2.5vw;
   }
+}
+.container-flex {
+
 }
