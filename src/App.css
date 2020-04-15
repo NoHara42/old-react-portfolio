@@ -129,10 +129,6 @@ h2 {
   top: 0;
 
 }
-.flag-size {
-  width: 40px;
-  height:40px;
-}
 .light {
   z-index: 10;
   position: absolute;
@@ -150,6 +146,10 @@ h2 {
   animation: over 10s ease forwards;
 }
 
+.flag-size {
+  width:40px;
+  height:40px;
+}
 @keyframes rise{
   0%{
     top: 50%;
@@ -212,6 +212,15 @@ h2 {
   width: 100%;
   height: 100%;
 }
+.timeline-element {
+  color: black;
+  fill: black;
+
+}
+.date-text {
+  color: #013535;
+  font-size: 20px;
+}
 #ContentsPage {
   background: radial-gradient(at 66% 50%, white, lightgrey);
 }
@@ -246,4 +255,15 @@ h2 {
 }
 .container-flex {
 
+}
+/* The line */
+.vertical-timeline::before {
+  background: #003b5c !important;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+
+/* Icon container's border */
+.vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #003b5c, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05) ;
 }
