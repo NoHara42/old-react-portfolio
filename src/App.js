@@ -84,7 +84,7 @@ class App extends Component {
             />
           </section>
           <section id="AboutMePage2">
-            <h2>Professional hobbies:</h2>
+            <h2>My professional hobbies:</h2>
             <BubbleChart
               width={800}
               height={800}
@@ -219,8 +219,18 @@ class App extends Component {
             <h2>Show Case 2</h2>
           </section>
           <section id="ContactPage">
+           <div class="contents-flex-grid">
+              <h1 class="contents-title">Contact me!</h1>
+              <a class="contents-icon" href="https://www.facebook.com/ned.ohara"><img class="contents-image" src={require("./assets/logo-facebook.svg")}></img></a>
+              <a class="contents-links" href="https://www.facebook.com/ned.ohara"><h1 class="contents-text">Facebook</h1></a>
+              <a class="contents-icon" href="https://www.linkedin.com/in/ned-o-hara-b5840b127/"><img class="contents-image" src={require("./assets/logo-linkedin.svg")}></img></a>
+              <a class="contents-links" href="https://www.linkedin.com/in/ned-o-hara-b5840b127/"><h1 class="contents-text">LinkedIn</h1></a>
+              <a class="contents-icon" ><img class="contents-image" src={require("./assets/call-outline.svg")}></img></a>
+              <a class="contents-links" ><h1 class="contents-text">+&#052;&#057;&#049;&#053;&#050;&#053;&#055;&#048;&#049;&#051;&#054;&#056;&#048;</h1></a>
+              <a class="contents-icon" href="mailto:&#109;&#097;&#105;&#108;&#110;&#101;&#100;&#052;&#050;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img class="contents-image" src={require("./assets/mail-outline.svg")}></img></a>
+              <a class="contents-links" href="mailto:&#109;&#097;&#105;&#108;&#110;&#101;&#100;&#052;&#050;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><h1 class="contents-text"> &#109;&#097;&#105;&#108;&#110;&#101;&#100;&#052;&#050;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</h1></a>
+            </div>
           <a href="#LandingPage"><p>Back to top.</p></a>
-
           </section>
         </div>
       </div>
