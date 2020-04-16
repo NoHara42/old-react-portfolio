@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b3fdb0b.chunk.css",
-    "main.js": "/static/js/main.dc16bd06.chunk.js",
-    "main.js.map": "/static/js/main.dc16bd06.chunk.js.map",
+    "main.css": "/static/css/main.cbe2fe53.chunk.css",
+    "main.js": "/static/js/main.84a9593d.chunk.js",
+    "main.js.map": "/static/js/main.84a9593d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.60a67793.js",
     "runtime-main.js.map": "/static/js/runtime-main.60a67793.js.map",
     "static/css/2.f681e662.chunk.css": "/static/css/2.f681e662.chunk.css",
-    "static/js/2.0a9a4c16.chunk.js": "/static/js/2.0a9a4c16.chunk.js",
-    "static/js/2.0a9a4c16.chunk.js.map": "/static/js/2.0a9a4c16.chunk.js.map",
+    "static/js/2.52066dfe.chunk.js": "/static/js/2.52066dfe.chunk.js",
+    "static/js/2.52066dfe.chunk.js.map": "/static/js/2.52066dfe.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1c8a7e463e320792ac4b2f6233ddcb59.js": "/precache-manifest.1c8a7e463e320792ac4b2f6233ddcb59.js",
+    "precache-manifest.89594d28f4936b92c9307d4da20a2db4.js": "/precache-manifest.89594d28f4936b92c9307d4da20a2db4.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.f681e662.chunk.css.map": "/static/css/2.f681e662.chunk.css.map",
-    "static/css/main.2b3fdb0b.chunk.css.map": "/static/css/main.2b3fdb0b.chunk.css.map",
-    "static/js/2.0a9a4c16.chunk.js.LICENSE.txt": "/static/js/2.0a9a4c16.chunk.js.LICENSE.txt",
+    "static/css/main.cbe2fe53.chunk.css.map": "/static/css/main.cbe2fe53.chunk.css.map",
+    "static/js/2.52066dfe.chunk.js.LICENSE.txt": "/static/js/2.52066dfe.chunk.js.LICENSE.txt",
     "static/media/aboutme.svg": "/static/media/aboutme.34fa810a.svg",
+    "static/media/basislagerCentered.png": "/static/media/basislagerCentered.d54d9917.png",
     "static/media/call-outline.svg": "/static/media/call-outline.2d7aeb42.svg",
+    "static/media/eCommeleonCentered.png": "/static/media/eCommeleonCentered.7bdbec77.png",
     "static/media/education.svg": "/static/media/education.e0ea3d9e.svg",
+    "static/media/leipzigCentered.png": "/static/media/leipzigCentered.f60179ae.png",
     "static/media/logo-facebook.svg": "/static/media/logo-facebook.3437099e.svg",
     "static/media/logo-linkedin.svg": "/static/media/logo-linkedin.0cbd7270.svg",
     "static/media/mail-outline.svg": "/static/media/mail-outline.1e585994.svg",
@@ -28,8 +31,8 @@
   "entrypoints": [
     "static/js/runtime-main.60a67793.js",
     "static/css/2.f681e662.chunk.css",
-    "static/js/2.0a9a4c16.chunk.js",
-    "static/css/main.2b3fdb0b.chunk.css",
-    "static/js/main.dc16bd06.chunk.js"
+    "static/js/2.52066dfe.chunk.js",
+    "static/css/main.cbe2fe53.chunk.css",
+    "static/js/main.84a9593d.chunk.js"
   ]
 }
