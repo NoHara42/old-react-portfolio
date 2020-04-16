@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.a2fb4949.chunk.css",
-    "main.js": "/static/js/main.3688e319.chunk.js",
-    "main.js.map": "/static/js/main.3688e319.chunk.js.map",
+    "main.css": "/static/css/main.05024732.chunk.css",
+    "main.js": "/static/js/main.411dc92a.chunk.js",
+    "main.js.map": "/static/js/main.411dc92a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.60a67793.js",
     "runtime-main.js.map": "/static/js/runtime-main.60a67793.js.map",
     "static/css/2.f681e662.chunk.css": "/static/css/2.f681e662.chunk.css",
     "static/js/2.f5c96d22.chunk.js": "/static/js/2.f5c96d22.chunk.js",
     "static/js/2.f5c96d22.chunk.js.map": "/static/js/2.f5c96d22.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b676d2f2d87e703f707b4f39d5897e28.js": "/precache-manifest.b676d2f2d87e703f707b4f39d5897e28.js",
+    "precache-manifest.9e9cf1f41b4e453e8dba7c6f120dad36.js": "/precache-manifest.9e9cf1f41b4e453e8dba7c6f120dad36.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.f681e662.chunk.css.map": "/static/css/2.f681e662.chunk.css.map",
-    "static/css/main.a2fb4949.chunk.css.map": "/static/css/main.a2fb4949.chunk.css.map",
+    "static/css/main.05024732.chunk.css.map": "/static/css/main.05024732.chunk.css.map",
     "static/js/2.f5c96d22.chunk.js.LICENSE.txt": "/static/js/2.f5c96d22.chunk.js.LICENSE.txt",
     "static/media/BrexitTwitterCrawler_DigitalHumanitiesProject.pdf": "/static/media/BrexitTwitterCrawler_DigitalHumanitiesProject.3983e2c5.pdf",
     "static/media/aboutme.svg": "/static/media/aboutme.34fa810a.svg",
@@ -33,7 +33,7 @@
     "static/js/runtime-main.60a67793.js",
     "static/css/2.f681e662.chunk.css",
     "static/js/2.f5c96d22.chunk.js",
-    "static/css/main.a2fb4949.chunk.css",
-    "static/js/main.3688e319.chunk.js"
+    "static/css/main.05024732.chunk.css",
+    "static/js/main.411dc92a.chunk.js"
   ]
 }
