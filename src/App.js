@@ -4,12 +4,41 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import deflag from './assets/deflag.png';
 import ukflag from './assets/ukflag.png';
-import { edu } from './assets/education.svg';
-import { work } from './assets/workexperience.svg';
 import BubbleChart from '@weknow/react-bubble-chart-d3';
+import eCommeleonLogo from './assets/eCommeleonCentered.png';
+import basislagerLogo from './assets/basislagerCentered.png';
+import leipzigLogo from './assets/leipzigCentered.png';
+import { Document, Page } from 'react-pdf';
+import { pdfjs } from 'react-pdf';
+import brexitcrawlerpdf from './assets/BrexitTwitterCrawler_DigitalHumanitiesProject.pdf';
+import OnVisible from 'react-on-visible';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class App extends Component {
+  state = {
+    numPages: null,
+    pageNumber: 1,
+  }
+
+  onDocumentLoadSuccess = (document) => {
+    const { numPages } = document;
+    this.setState({
+      numPages,
+      pageNumber: 1
+    });
+  };
+
+  changePage = offset => this.setState(prevState => ({
+    pageNumber: prevState.pageNumber + offset,
+  }));
+
+  previousPage = () => this.changePage(-1);
+
+  nextPage = () => this.changePage(1);
+
   render() {
+    const { pageNumber, numPages } = this.state;
     return (
       <div class="App">
         <div class="container">
@@ -17,23 +46,31 @@ class App extends Component {
             <div class="landing-flex-grid">
               <img class="profile-picture" src={require("./assets/resizedprofilepicture.jpg")}></img>
               <h1 class="name">Ned O'Hara</h1>
-              <h1 class="occupation">Developer / Visual Artist</h1>
+              <h1 class="occupation">Developer / Designer</h1>
             </div>
           </section>
+          
           <section id="GreetingPage">
-            <div class="animation-container">
-              <div class="light" />
-              <div class="dawn" />
-              <div class="sea" />
-              <div class="greeting-container">
-                <div class="greeting">Hello</div>
+              <div class="animation-container">
+                  <div class="light" />
+                  <div class="dawn" />
+                  <div class="sea" />
+                  <div class="greeting-container">
+                    <div class="greeting">Hello</div>
+                  </div>
+                      <OnVisible
+                        percent={10}
+                        className="sun-container-active"
+                        onChange={console.log("visibilityChanged")}
+                      >
+                        <div class="sun-container" >
+                            <div class="sun"/>
+                        </div>
+                      </OnVisible>
+                  <div class="sky" />
               </div>
-              <div class="sun-container">
-                <div class="sun" />
-              </div>
-              <div class="sky" />
-            </div>
           </section>
+          
 
           <section id="ContentsPage">
             <div class="contents-flex-grid">
@@ -46,13 +83,15 @@ class App extends Component {
               <a class="contents-links" href="#WorkExperiencePage"><h1 class="contents-text">Work Experience</h1></a>
               <a class="contents-icon" href="#ShowCasePage1"><img class="contents-image" src={require("./assets/showcase.svg")}></img></a>
               <a class="contents-links" href="#ShowCasePage1"><h1 class="contents-text">Show Case</h1></a>
+              <a class="contents-icon" href="#ContactPage"><img class="contents-image" src={require("./assets/mail-outline.svg")}></img></a>
+              <a class="contents-links" href="#ContactPage"><h1 class="contents-text">Contact</h1></a>
             </div>
           </section>
           <section id="AboutMePage">
             <h2>My hobbies:</h2>
             <BubbleChart
-              width={700}
-              height={700}
+              height={600}
+              width={600}
               fontFamily="Maven Pro"
               overflow={true}
               legendFont={{
@@ -63,7 +102,7 @@ class App extends Component {
               }}
               valueFont={{
                 family: "Maven Pro",
-                size: 14,
+                size: 12,
                 color: 'transparent',
                 weight: 'bold',
               }}
@@ -86,8 +125,8 @@ class App extends Component {
           <section id="AboutMePage2">
             <h2>My professional hobbies:</h2>
             <BubbleChart
-              width={800}
-              height={800}
+              width={600}
+              height={600}
               fontFamily="Maven Pro"
               overflow={true}
               legendFont={{
@@ -116,9 +155,9 @@ class App extends Component {
                 { label: 'MySQL', value: 5 },
                 { label: 'CSS', value: 5 },
                 { label: 'HTML', value: 5 },
-                { label: 'React', value: 2 },
-                { label: 'JavaScript', value: 5 },
-                { label: 'Python', value: 5 }
+                { label: 'JS', value: 5 },
+                { label: 'Python', value: 5 },
+                { label: 'React', value: 5 }
         
               ]}
             />
@@ -131,9 +170,10 @@ class App extends Component {
                 contentStyle={{ background: '#013535', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #013535' }}
                 date={<div class="date-text">2014 - 2016</div>}
-                iconStyle={{ background: '#013535', color: '#fff' }}
+                iconStyle={{ background: 'white', color: '#fff' }}
+                icon={<img class="flag-size" src={ukflag}></img>}
               >
-                <img class="flag-size" src={ukflag}></img>
+                {/* <img class="flag-size" src={ukflag}></img> */}
                 <h3 className="vertical-timeline-element-title">Completed A-Levels at Esher College</h3>
                 <h4 className="vertical-timeline-element-subtitle">Surrey, England</h4>
                 <p />
@@ -147,10 +187,10 @@ class App extends Component {
                 contentStyle={{ background: '#013535', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #013535' }}
                 date={<div class="date-text">2017 - Current</div>}
-                iconStyle={{ background: '#013535', color: '#fff' }}
-              // icon={<svg class="flag-size" src={edu}></svg>}
+                iconStyle={{ background: 'white', color: '#fff' }}
+                icon={<img class="flag-size" src={deflag}></img>}
               >
-                <img class="flag-size" src={deflag}></img>
+                {/* <img class="flag-size" src={deflag}></img> */}
                 <h3 className="vertical-timeline-element-title">Studying Digital Humanities (B.Sc)</h3>
                 <h4 className="vertical-timeline-element-subtitle">Leipzig, Germany</h4>
                 <p />
@@ -168,7 +208,8 @@ class App extends Component {
                 contentStyle={{ background: '#013535', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #013535' }}
                 date={<div class="date-text">2016 - 2017</div>}
-                iconStyle={{ background: '#013535', color: '#fff' }}
+                iconStyle={{ background: 'white', color: '#fff' }}
+                icon={<img class="logo-size" src={basislagerLogo}></img>}
               >
 
                 <h3 className="vertical-timeline-element-title">Coworking Community Manager</h3>
@@ -183,8 +224,9 @@ class App extends Component {
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: '#013535', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #013535' }}
-                date={<div class="date-text">2016 - 2017</div>}
-                iconStyle={{ background: '#013535', color: '#fff' }}
+                date={<div class="date-text">2018-2019</div>}
+                iconStyle={{ background: 'white', color: '#fff' }}
+                icon={<img class="logo-size leipzig-logo" src={leipzigLogo}></img>}            
               >
 
                 <h3 className="vertical-timeline-element-title">Student Researcher</h3>
@@ -199,8 +241,9 @@ class App extends Component {
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: '#013535', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #013535' }}
-                date={<div class="date-text">2016 - 2017</div>}
-                iconStyle={{ background: '#013535', color: '#fff' }}
+                date={<div class="date-text">2019-2020</div>}
+                iconStyle={{ background: 'white', color: '#fff' }}
+                icon={<img class="logo-size" src={eCommeleonLogo}></img>}
               >
 
                 <h3 className="vertical-timeline-element-title">Back-End Developer</h3>
@@ -213,13 +256,46 @@ class App extends Component {
             </VerticalTimeline>
           </section>
           <section id="ShowCasePage1">
-            <h2>Show Case 1</h2>
-          </section>
-          <section id="ShowCasePage2">
-            <h2>Show Case 2</h2>
-          </section>
+            
+            <Document 
+              className="showcase-container"
+              file={brexitcrawlerpdf}
+              renderMode="canvas"
+              onLoadSuccess={this.onDocumentLoadSuccess}
+            >
+              <Page
+                scale={0.9}
+                className="pdf-container"
+                pageNumber={pageNumber}
+                renderAnnotationLayer={"false"}
+               />
+              <h2 className="showcase-title">Brexit Twitter Crawler</h2>
+              <div className="showcase-description showcase-text">We built a Twitter crawler, (a program that collects data from an API) to analyse the sentiment (reaction) of tweets of various UK newspaper publisher's followers - throughout the Brexit saga. </div>
+              <div className="showcase-buttons-container">
+                <button
+                  className="showcase-buttons showcase-text"
+                  type="button"
+                  disabled={pageNumber <= 1}
+                  onClick={this.previousPage}
+                >
+                  Prev
+                </button>
+                <button
+                  className="showcase-buttons showcase-text"
+                  type="button"
+                  disabled={pageNumber >= numPages}
+                  onClick={this.nextPage}
+                >
+                  Next
+                </button>
+              </div>
+            </Document>
+            </section>
+          {/* <section id="ShowCasePage2">
+            <h2>// Showcase 2 // Under construction //</h2>
+          </section> */}
           <section id="ContactPage">
-           <div class="contents-flex-grid">
+           <div class="contact-flex-grid">
               <h1 class="contents-title">Contact me!</h1>
               <a class="contents-icon" href="https://www.facebook.com/ned.ohara"><img class="contents-image" src={require("./assets/logo-facebook.svg")}></img></a>
               <a class="contents-links" href="https://www.facebook.com/ned.ohara"><h1 class="contents-text">Facebook</h1></a>
