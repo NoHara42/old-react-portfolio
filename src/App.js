@@ -8,6 +8,10 @@ import BubbleChart from '@weknow/react-bubble-chart-d3';
 import eCommeleonLogo from './assets/eCommeleonCentered.png';
 import basislagerLogo from './assets/basislagerCentered.png';
 import leipzigLogo from './assets/leipzigCentered.png';
+import page1 from './assets/idhPage1.png';
+import page8 from './assets/idhPage8.png';
+import lineChart from './assets/newspaper_sentiments_linechart.png';
+import pieChart from './assets/bias_newspaper_user_piechart.png';
 import { Document, Page } from 'react-pdf';
 import { pdfjs } from 'react-pdf';
 import brexitcrawlerpdf from './assets/BrexitTwitterCrawler_DigitalHumanitiesProject.pdf';
@@ -256,41 +260,23 @@ class App extends Component {
             </VerticalTimeline>
           </section>
           <section id="ShowCasePage1">
-            
-            <Document 
-              className="showcase-container"
-              file={brexitcrawlerpdf}
-              renderMode="canvas"
-              onLoadSuccess={this.onDocumentLoadSuccess}
-            >
-              <Page
-                scale={0.9}
-                className="pdf-container"
-                pageNumber={pageNumber}
-                renderAnnotationLayer={"false"}
-               />
-              <h2 className="showcase-title">Brexit Twitter Crawler</h2>
-              <div className="showcase-description showcase-text">We built a Twitter crawler, (a program that collects data from an API) to analyse the sentiment (reaction) of tweets of various UK newspaper publisher's followers - throughout the Brexit saga. </div>
-              <div className="showcase-buttons-container">
-                <button
-                  className="showcase-buttons showcase-text"
-                  type="button"
-                  disabled={pageNumber <= 1}
-                  onClick={this.previousPage}
-                >
-                  Prev
-                </button>
-                <button
-                  className="showcase-buttons showcase-text"
-                  type="button"
-                  disabled={pageNumber >= numPages}
-                  onClick={this.nextPage}
-                >
-                  Next
-                </button>
+            <div className="showcase-container">
+              <div className="showcase-gallery">
+                <img className="showcase-page" src={page1} ></img>
+                <div className="showcase-graphs">
+                  <img className="showcase-linechart" src={lineChart}></img>
+                  <div className="showcase-whitespace"></div>
+                  <img className="showcase-piechart" src={pieChart}></img>
+                </div>
               </div>
-            </Document>
-            </section>
+              <div className="showcase-text">
+                <h2 className="showcase-title">Brexit Twitter Crawler</h2>
+                <div className="showcase-description">We built a Twitter crawler, (a program that collects data from an API) to analyse the sentiment (reaction) of tweets of various UK newspaper publisher's followers - throughout the Brexit saga. 
+                  <a href="https://github.com/NoHara42/nohara42.github.io/blob/dev/src/assets/BrexitTwitterCrawler_DigitalHumanitiesProject.pdf">See the paper here.</a>
+                </div>
+              </div>
+            </div>
+          </section>
           {/* <section id="ShowCasePage2">
             <h2>// Showcase 2 // Under construction //</h2>
           </section> */}

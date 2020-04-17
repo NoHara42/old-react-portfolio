@@ -302,46 +302,79 @@ h2 {
   height: 40px;
 }
 .showcase-container {
-  margin: 50px;
+  border: 2px solid orange;
   display: grid;
-  grid-template-columns: 4fr 1fr 3fr;
-  grid-template-rows: 2fr 2fr 2fr;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 50px 50px 50px 50px;
+  height: 80vh;
+  width: 75vw;
 }
-.pdf-container {
-  position: absolute;
-  justify-self: center;
-  grid-column-start: 1;
-  grid-row: 1 / 4;
+.showcase-gallery {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  display: grid;
+  border: 2px solid red;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 1fr 1fr;
 }
-canvas {
-  width: 100% !important;
-  height: auto !important;
+.showcase-page {  
+  grid-column: 1;
+  grid-row: 1 / 3;
+  height: auto;
+  max-width: 100%;
+}
+.showcase-graphs {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  border: 2px solid blue;
+  display: flex;
+  height: auto;
+  max-width: 100%;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center
+}
+.showcase-linechart {
+  width: 100%;
+  max-height: 100%;
+}
+.showcase-whitespace {
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+.showcase-piechart {
+  width: 100%;
+  max-height: 100%;
 }
 .showcase-text {
-  font-family: "Maven Pro";
+  border: 2px solid green;
+  grid-column: 2;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
 }
 .showcase-title {
-  justify-self: top;
-  align-self: top;
-  margin-top: 100px;
+  font-family: "Maven Pro";
   font-size: 30px;
   font-weight: 600;
-  grid-column-start: 3;
-  grid-row-start: 1;
-
-
+  grid-column: 2;
+  grid-row: 1;
 }
 .showcase-description {
-  justify-self: top;
-  align-content: top;
-  margin-top: 50px;
+  font-family: "Maven Pro";
   font-size: 15px;
   font-weight: 400;
-  grid-column-start: 3;
-  grid-row-start: 2;
-
+  grid-column: 2;
+  grid-row: 2;
 }
-.showcase-buttons-container {
+/* .showcase-buttons-container {
   display: flex;
   justify-content: left;
   align-content: space-between;
@@ -355,7 +388,7 @@ canvas {
 }
 .showcase-buttons {
 
-}
+} */
 
 @media only screen and (max-width: 1169px) {
   .greeting {
@@ -410,5 +443,4 @@ canvas {
   .vertical-timeline {
     font-size: 10px !important;
   }
-
 }
