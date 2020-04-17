@@ -272,6 +272,7 @@ class App extends Component {
               <div className="showcase-text">
                 <h2 className="showcase-title">Brexit Twitter Crawler</h2>
                 <div className="showcase-description">We built a Twitter crawler, (a program that collects data from an API) to analyse the sentiment (reaction) of tweets of various UK newspaper publisher's followers - throughout the Brexit saga. 
+                  
                   <a href="https://github.com/NoHara42/nohara42.github.io/blob/dev/src/assets/BrexitTwitterCrawler_DigitalHumanitiesProject.pdf">See the paper here.</a>
                 </div>
               </div>
