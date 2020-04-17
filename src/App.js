@@ -12,37 +12,25 @@ import page1 from './assets/idhPage1.png';
 import page8 from './assets/idhPage8.png';
 import lineChart from './assets/newspaper_sentiments_linechart.png';
 import pieChart from './assets/bias_newspaper_user_piechart.png';
-import { Document, Page } from 'react-pdf';
-import { pdfjs } from 'react-pdf';
 import brexitcrawlerpdf from './assets/BrexitTwitterCrawler_DigitalHumanitiesProject.pdf';
 import OnVisible from 'react-on-visible';
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
+import pieChart2 from './assets/bias_hashtags_count_piechart.png';
 class App extends Component {
-  state = {
-    numPages: null,
-    pageNumber: 1,
+
+  constructor() {
+    super();
+    var temp1 = (window.innerWidth < 812) ? 10 : 14;
+    var temp2 = (window.innerHeight < window.innerWidth) ? window.innerHeight : window.innerWidth;
+  
+    this.state = {
+      estimatedFont: temp1,
+      smallestAxisLength : temp2,
+    }
   }
 
-  onDocumentLoadSuccess = (document) => {
-    const { numPages } = document;
-    this.setState({
-      numPages,
-      pageNumber: 1
-    });
-  };
-
-  changePage = offset => this.setState(prevState => ({
-    pageNumber: prevState.pageNumber + offset,
-  }));
-
-  previousPage = () => this.changePage(-1);
-
-  nextPage = () => this.changePage(1);
-
-  render() {
-    const { pageNumber, numPages } = this.state;
+  render() {    
+    
+    console.log("Height: "+window.innerHeight+" - Width: "+window.innerWidth+" - SmallestAxisLength: "+this.state.smallestAxisLength);
     return (
       <div class="App">
         <div class="container">
@@ -65,7 +53,6 @@ class App extends Component {
                       <OnVisible
                         percent={10}
                         className="sun-container-active"
-                        onChange={console.log("visibilityChanged")}
                       >
                         <div class="sun-container" >
                             <div class="sun"/>
@@ -94,25 +81,25 @@ class App extends Component {
           <section id="AboutMePage">
             <h2>My hobbies:</h2>
             <BubbleChart
-              height={600}
-              width={600}
+              height={this.state.smallestAxisLength * 0.9}
+              width={this.state.smallestAxisLength * 0.9}
               fontFamily="Maven Pro"
               overflow={true}
               legendFont={{
                 family: "Maven Pro",
-                size: 14,
+                size: this.state.estimatedFont,
                 color: '#013535',
                 weight: 'bold'
               }}
               valueFont={{
                 family: "Maven Pro",
-                size: 12,
+                size: this.state.estimatedFont,
                 color: 'transparent',
                 weight: 'bold',
               }}
               labelFont={{
                 family: "Maven Pro",
-                size: 16,
+                size: this.state.estimatedFont,
                 color: "white",
                 weight: 'bold'
               }}
@@ -129,25 +116,25 @@ class App extends Component {
           <section id="AboutMePage2">
             <h2>My professional hobbies:</h2>
             <BubbleChart
-              width={600}
-              height={600}
+              height={this.state.smallestAxisLength * 0.9}
+              width={this.state.smallestAxisLength * 0.9}
               fontFamily="Maven Pro"
               overflow={true}
               legendFont={{
                 family: "Maven Pro",
-                size: 14,
+                size: this.state.estimatedFont,
                 color: '#013535',
                 weight: 'bold'
               }}
               valueFont={{
                 family: "Maven Pro",
-                size: 16,
+                size: this.state.estimatedFont,
                 color: 'transparent',
                 weight: 'bold',
               }}
               labelFont={{
                 family: "Maven Pro",
-                size: 18,
+                size: this.state.estimatedFont,
                 color: "white",
                 weight: 'bold'
               }}
@@ -266,6 +253,8 @@ class App extends Component {
                 <div className="showcase-graphs">
                   <img className="showcase-linechart" src={lineChart}></img>
                   <div className="showcase-whitespace"></div>
+                  <img className="showcase-piechart2" src={pieChart2}></img>
+                  <div className="showcase-whitespace"></div>
                   <img className="showcase-piechart" src={pieChart}></img>
                 </div>
               </div>
@@ -273,7 +262,11 @@ class App extends Component {
                 <h2 className="showcase-title">Brexit Twitter Crawler</h2>
                 <div className="showcase-description">We built a Twitter crawler, (a program that collects data from an API) to analyse the sentiment (reaction) of tweets of various UK newspaper publisher's followers - throughout the Brexit saga. 
                   
-                  <a href="https://github.com/NoHara42/nohara42.github.io/blob/dev/src/assets/BrexitTwitterCrawler_DigitalHumanitiesProject.pdf">See the paper here.</a>
+                  <a href="https://github.com/NoHara42/nohara42.github.io/blob/dev/src/assets/BrexitTwitterCrawler_DigitalHumanitiesProject.pdf">
+                    <div className="showcase-link">
+                      See the paper here.
+                      </div>
+                    </a>
                 </div>
               </div>
             </div>
@@ -293,8 +286,10 @@ class App extends Component {
               <a class="contents-icon" href="mailto:&#109;&#097;&#105;&#108;&#110;&#101;&#100;&#052;&#050;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><img class="contents-image" src={require("./assets/mail-outline.svg")}></img></a>
               <a class="contents-links" href="mailto:&#109;&#097;&#105;&#108;&#110;&#101;&#100;&#052;&#050;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><h1 class="contents-text"> &#109;&#097;&#105;&#108;&#110;&#101;&#100;&#052;&#050;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</h1></a>
             </div>
-          <a href="#LandingPage"><p>Back to top.</p></a>
           </section>
+          <div>
+            <a className="back-to-top" href="#LandingPage">Back to top.</a>
+          </div>
         </div>
       </div>
     );
