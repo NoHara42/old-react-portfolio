@@ -95,7 +95,7 @@ h2 {
   color: white;
   top: 50%;
   opacity: 0.8;
-  font-family: "Mavon Pro", sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-size: 1vw;
   font-weight: 550;
 }
@@ -330,6 +330,7 @@ h2 {
   box-shadow: 0 0 0 8px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05) ;
   grid-template-columns: 4fr 2fr;
   grid-template-rows: 1fr 1fr;
+  background: white;
 }
 .showcase-page {  
   grid-column: 1;
@@ -530,6 +531,9 @@ h2 {
   
   .vertical-timeline {
     font-size: 10px !important;
+  }
+  h2 {
+    font-size: 20px;
   }
   .showcase-container {
     /* border: 2px solid orange; */
