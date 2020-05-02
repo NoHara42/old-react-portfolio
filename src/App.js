@@ -97,14 +97,14 @@ class App extends Component {
                 family: "Maven Pro",
                 // size: this.state.estimatedFont,
                 color: 'transparent',
-                weight: 'bold',
+                weight: 'regular',
                 size: 25*(this.state.smallestAxisLength/1080)
               }}
               labelFont={{
                 family: "Maven Pro",
                 // size: this.state.estimatedFont,
                 color: "white",
-                weight: 'bold',
+                weight: 'regular',
                 size: 25*(this.state.smallestAxisLength/1080),
               }}
               data={[
@@ -129,21 +129,21 @@ class App extends Component {
                 size: Number(25*(this.state.smallestAxisLength/1080)),
                 // size: this.state.estimatedFont,
                 color: '#013535',
-                weight: 'bold'
+                weight: 'regular'
               }}
               valueFont={{
                 family: "Maven Pro",
                 size: Number(25*(this.state.smallestAxisLength/1080)),
                 // size: this.state.estimatedFont,
                 color: 'transparent',
-                weight: 'bold',
+                weight: 'regular',
               }}
               labelFont={{
                 family: "Maven Pro",
                 size: Number(25*(this.state.smallestAxisLength/1080)),
                 // size: this.state.estimatedFont,
                 color: "white",
-                weight: 'bold'
+                weight: 'regular'
               }}
               data={[
                 { label: 'Back-End', value: 40 },
