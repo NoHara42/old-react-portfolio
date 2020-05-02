@@ -48,7 +48,7 @@ class App extends Component {
                   <div class="dawn" />
                   <div class="sea" />
                   <div class="greeting-container">
-                    <div class="greeting">Hello</div>
+                    {/* <div class="greeting">Hello</div> */}
                   </div>
                       <OnVisible
                         percent={10}
