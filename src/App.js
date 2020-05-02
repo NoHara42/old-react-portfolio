@@ -87,21 +87,25 @@ class App extends Component {
               overflow={true}
               legendFont={{
                 family: "Maven Pro",
-                size: this.state.estimatedFont,
+                // size: this.state.estimatedFont,
                 color: '#013535',
-                weight: 'bold'
+                weight: 'regular',
+                size: 25*(this.state.smallestAxisLength/1080)
+
               }}
               valueFont={{
                 family: "Maven Pro",
-                size: this.state.estimatedFont,
+                // size: this.state.estimatedFont,
                 color: 'transparent',
                 weight: 'bold',
+                size: 25*(this.state.smallestAxisLength/1080)
               }}
               labelFont={{
                 family: "Maven Pro",
-                size: this.state.estimatedFont,
+                // size: this.state.estimatedFont,
                 color: "white",
-                weight: 'bold'
+                weight: 'bold',
+                size: 25*(this.state.smallestAxisLength/1080),
               }}
               data={[
                 { label: 'Guitar', value: 20 },
@@ -122,19 +126,22 @@ class App extends Component {
               overflow={true}
               legendFont={{
                 family: "Maven Pro",
-                size: this.state.estimatedFont,
+                size: Number(25*(this.state.smallestAxisLength/1080)),
+                // size: this.state.estimatedFont,
                 color: '#013535',
                 weight: 'bold'
               }}
               valueFont={{
                 family: "Maven Pro",
-                size: this.state.estimatedFont,
+                size: Number(25*(this.state.smallestAxisLength/1080)),
+                // size: this.state.estimatedFont,
                 color: 'transparent',
                 weight: 'bold',
               }}
               labelFont={{
                 family: "Maven Pro",
-                size: this.state.estimatedFont,
+                size: Number(25*(this.state.smallestAxisLength/1080)),
+                // size: this.state.estimatedFont,
                 color: "white",
                 weight: 'bold'
               }}
