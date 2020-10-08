@@ -28,8 +28,6 @@ section {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
   /* scroll-snap-align: center;
   scroll-snap-stop: always; */
 }
@@ -110,6 +108,11 @@ h2 {
 }
 .sun-container-active {
   animation: rise 25s ease 0s forwards;
+  animation-play-state: running;
+}
+.sun-container-passive {
+  animation: hover infinite both;
+  animation-delay: 25s;
   animation-play-state: running;
 }
 .sun {
@@ -245,32 +248,52 @@ h2 {
 }
 #ContentsPage {
   background: radial-gradient(at 50% 100%, white, lightgrey);
+  width: 100%;
+  height: 100%;
+}
+#GreetingPage {
+  width: 100%;
+  height: 100%;
 }
 #LandingPage {
   background-image: url("./assets/northern-lights-3273425.jpg");
   background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 #AboutMePage {
   background: radial-gradient(at 50% 0%, white, lightgrey);
+  height: 100%
 }
 #AboutMePage2 {
   background: radial-gradient(at 50% 100%, white, lightgrey);
+  height: 100%
+
 }
 #EducationPage {
-  background: radial-gradient(at 50% 0%, white, lightgrey);
-}
-#WorkExperiencePage {
   background: radial-gradient(at 50% 100%, white, lightgrey);
   padding-bottom: 150px;
 }
+#WorkExperiencePage {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background: radial-gradient(at 50% 0%, white, lightgrey);
+}
 #ShowCasePage1 {
   background: radial-gradient(at 50% 0%, white, lightgrey);
+  width: 100%;
+  height: 100%;
+
 }
 #ShowCasePage2 {
   background: radial-gradient(at 50% 100%, white, lightgrey);
+  width: 100%;
+  height: 100%;
 }
 #ContactPage {
   background: radial-gradient(at 50% 1000%, white, lightgrey);
+  width: 100%;
+  height: 100%;
   
 }
 .back-to-top {
@@ -282,19 +305,7 @@ h2 {
   display: flex;
   justify-content: center;
 }
-/* canvas {
-  width: auto;
-  max-height: 100%;
-} */
-/* @supports not (scroll-snap-type: y mandatory) {
-  .container {
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-snap-type: none;
-  }
-} */
+
 /* The line */
 .vertical-timeline::before {
   background: #013535 !important;
@@ -313,7 +324,6 @@ h2 {
   height: 40px;
 }
 .showcase-container {
-  /* border: 2px solid orange; */
   display: grid;
   justify-items: center;
   align-items: center;
@@ -327,7 +337,7 @@ h2 {
   grid-column: 1;
   grid-row: 1 / 3;
   display: grid;
-  box-shadow: 0 0 0 8px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05) ;
+  box-shadow: 5px 7px 5px #aaaaaa;
   grid-template-columns: 4fr 2fr;
   grid-template-rows: 1fr 1fr;
   background: white;
@@ -366,12 +376,11 @@ h2 {
 .showcase-link {
   font-family: "Maven Pro";
   margin-top: 20px;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 400;
   text-align: left;
 }
 .showcase-text {
-  /* border: 2px solid green; */
   grid-column: 2;
   grid-row: 1 / 3;
   display: flex;
@@ -380,6 +389,9 @@ h2 {
   align-content: center;
   margin: 20px;
   margin-left: 50px;
+}
+.titles {
+  padding: 80px;
 }
 .showcase-title {
   font-family: "Maven Pro";
@@ -398,21 +410,6 @@ h2 {
   grid-column: 2;
   grid-row: 2;
 }
-/* .showcase-buttons-container {
-  display: flex;
-  justify-content: left;
-  align-content: space-between;
-  flex-direction: row;
-  grid-column-start: 3;
-  grid-row-start: 3;
-  font-weight: 500;
-  margin-top: 30px;
-  height: 8vh;
-  max-width: 100%;
-}
-.showcase-buttons {
-
-} */
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1170px) {
@@ -447,7 +444,6 @@ h2 {
     font-size: 15px;
   }
   .showcase-container {
-    /* border: 2px solid orange; */
     display: grid;
     justify-items: center;
     align-items: center;
@@ -458,51 +454,34 @@ h2 {
     width: 90vw;
   }
   .showcase-gallery {
-    grid-column: 1;
-    grid-row: 1 / 3;
-    display: grid;
-    /* border: 2px solid red; */
-    grid-template-columns: 1fr;
-    grid-template-rows: 6fr 2fr;
-    
+    display: flex;
+    flex-direction: column;
   }
-  .showcase-page {  
-    grid-column: 1;
-    grid-row: 1;
+  .showcase-page {
+    height: 66vh;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: auto;
   }
   .showcase-graphs {
-    grid-column: 1;
-    grid-row: 2;
-    /* border: 2px solid blue; */
     display: flex;
     flex-direction: row;
-  }
-  .showcase-linechart {
-    width: 80%;
-    height: 80%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .showcase-whitespace {
     background: white;
   }
-  .showcase-piechart {
-    width: 80%;
-    height: 80%;
-  }
-  .showcase-piechart2 {
-    width: 100%;
-    max-height: 100%;
-    display: none;
-  }
   .showcase-text {
-    /* border: 2px solid green; */
+    display: flex;
     grid-column: 2;
     grid-row: 1 / 3;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     margin: 20px;
-  
   }
   .showcase-title {
     font-family: "Maven Pro";
@@ -536,7 +515,6 @@ h2 {
     font-size: 20px;
   }
   .showcase-container {
-    /* border: 2px solid orange; */
     display: grid;
     justify-items: center;
     align-items: center;
@@ -547,47 +525,29 @@ h2 {
     width: 90vw;
   }
   .showcase-gallery {
-    grid-column: 1;
-    grid-row: 1 / 3;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 6fr 2fr;
+    display: flex;
   }
   .showcase-page {  
     grid-column: 1;
     grid-row: 1;
-    height: auto;
     max-width: 100%;
   }
   .showcase-graphs {
-    grid-column: 1;
-    grid-row: 2;
-    /* border: 2px solid blue; */
-    display: flex;
-    flex-direction: row;
-    align-items: top;
+    display: none;
   }
   .showcase-linechart {
-    width: 80%;
-    height: 80%;
+    display: none;
   }
   .showcase-whitespace {
-    background: white;
-    width: auto;
-    max-height: 100%;
+    display: none;
   }
   .showcase-piechart {
-    width: 80%;
-    height: 80%;
+    display: none;
   }
   .showcase-piechart2 {
     display: none;
-    width: 100%;
-    max-height: 100%;
-    visibility: hidden;
   }
   .showcase-text {
-    /* border: 2px solid green; */
     grid-column: 2;
     grid-row: 1 / 3;
     display: flex;
