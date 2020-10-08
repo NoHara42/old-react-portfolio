@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "03551f6c8fe83341fd7c89f7d6248d87",
+    "revision": "c92ffd0eacd08a624ef655a4578b6971",
     "url": "/index.html"
   },
   {
-    "revision": "4bcf9514ca96633f41a7",
+    "revision": "8b4a556f60526573f6b1",
     "url": "/static/css/2.f681e662.chunk.css"
   },
   {
-    "revision": "678a907652365d9568ff",
-    "url": "/static/css/main.96a53dcf.chunk.css"
+    "revision": "6dfaf6e3504f700a805d",
+    "url": "/static/css/main.1d3217b3.chunk.css"
   },
   {
-    "revision": "4bcf9514ca96633f41a7",
-    "url": "/static/js/2.1a8b0754.chunk.js"
+    "revision": "8b4a556f60526573f6b1",
+    "url": "/static/js/2.2004af99.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/static/js/2.1a8b0754.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.2004af99.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "678a907652365d9568ff",
-    "url": "/static/js/main.3194b384.chunk.js"
+    "revision": "6dfaf6e3504f700a805d",
+    "url": "/static/js/main.e411245c.chunk.js"
   },
   {
-    "revision": "e814158b3d0888a2ff31",
-    "url": "/static/js/runtime-main.60a67793.js"
+    "revision": "5dbfb7dbfbe7ffcbea9b",
+    "url": "/static/js/runtime-main.14da6479.js"
   },
   {
-    "revision": "3983e2c532ed3ea4b3255423ab320a80",
-    "url": "/static/media/BrexitTwitterCrawler_DigitalHumanitiesProject.3983e2c5.pdf"
+    "revision": "3aa112ea4e81f9250c9cd3195a8144f4",
+    "url": "/static/media/Logo-Rohde_Schwarz.3aa112ea.jpg"
   },
   {
     "revision": "34fa810ad1f986d43859d9bb388fd7d6",
@@ -62,10 +62,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "49c6af028b8da4658b7d757c686a4697",
     "url": "/static/media/idhPage1.49c6af02.png"
-  },
-  {
-    "revision": "1b06965db81e2049e7cc06742f704def",
-    "url": "/static/media/idhPage8.1b06965d.png"
   },
   {
     "revision": "f60179ae43e19a5274bdfd76a9ff90b4",
