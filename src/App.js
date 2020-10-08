@@ -256,6 +256,7 @@ class App extends Component {
           </section>
           <section id="ShowCasePage1">
             <div className="showcase-container">
+              <h3 className="showcase-title">Brexit Twitter Crawler:</h3>
               <div className="showcase-gallery">
                 <img alt=""  className="showcase-page" src={page1} ></img>
                 <div className="showcase-graphs">
@@ -267,7 +268,6 @@ class App extends Component {
                 </div>
               </div>
               <div className="showcase-text">
-                <h2 className="showcase-title">Brexit Twitter Crawler</h2>
                 <div className="showcase-description">We built a Twitter crawler, (a program that collects data from an API) to analyse the sentiment (reaction) of tweets of various UK newspaper publisher's followers - throughout the Brexit saga. 
                   
                   <div className="showcase-link">
