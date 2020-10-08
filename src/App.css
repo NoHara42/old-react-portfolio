@@ -458,18 +458,14 @@ h2 {
     flex-direction: column;
   }
   .showcase-page {
-    height: 66vh;
+
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 30px;
-    max-width: auto;
+    max-width: 50vw;
   }
   .showcase-graphs {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    display: none;
   }
   .showcase-whitespace {
     background: white;
@@ -525,7 +521,7 @@ h2 {
   .showcase-page {  
     grid-column: 1;
     grid-row: 1;
-    max-width: 100%;
+    max-height: 80vh;
   }
   .showcase-graphs {
     display: none;
@@ -558,7 +554,7 @@ h2 {
   }
   .showcase-description {
     font-family: "Maven Pro";
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     grid-column: 2;
     grid-row: 2;
