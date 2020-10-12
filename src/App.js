@@ -16,6 +16,7 @@ import OnVisible from 'react-on-visible';
 import pieChart2 from './assets/bias_hashtags_count_piechart.png';
 import LoadingOverlay from 'react-loading-overlay';
 import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader'
+import { wait } from '@testing-library/react';
 
 class App extends Component {
 
@@ -32,7 +33,9 @@ class App extends Component {
   }
 
   handleImageLoaded() {
-    this.setState({ isLandingPageImageLoaded: !this.state.isLandingPageImageLoaded});
+    setTimeout(() => {
+      this.setState({ isLandingPageImageLoaded: !this.state.isLandingPageImageLoaded});
+    }, 2000);
   }
 
   /**
@@ -56,7 +59,7 @@ class App extends Component {
       <div class="App">
         <LoadingOverlay
           active={!this.state.isLandingPageImageLoaded}
-          fadingSpeed={500}
+          fadingSpeed={1000}
           spinner={<ClimbingBoxLoader 
             size={20}
             color={"white"}
