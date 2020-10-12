@@ -395,7 +395,7 @@ h2 {
 }
 .showcase-title {
   font-family: "Maven Pro";
-  font-size: 30px;
+  font-size: 40px;
   text-align: left;
   font-weight: 600;
   grid-column: 2;
@@ -407,7 +407,7 @@ h2 {
 .showcase-description {
   font-family: "Maven Pro";
   text-align: left;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
   grid-column: 2;
   grid-row: 2;
@@ -493,10 +493,11 @@ h2 {
     grid-row: 1;
     justify-self: flex-start;
     margin-bottom:50px;
+    margin-top:100px;
   }
   .showcase-description {
     font-family: "Maven Pro";
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     grid-column: 2;
     grid-row: 2;
@@ -553,9 +554,12 @@ h2 {
     justify-content: center;
     align-content: center;
   }
+  .titles {
+    font-size: 25px;
+  }
   .showcase-title {
     font-family: "Maven Pro";
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     grid-column: 2;
     grid-row: 1;
@@ -564,7 +568,7 @@ h2 {
   }
   .showcase-description {
     font-family: "Maven Pro";
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     grid-column: 2;
     grid-row: 2;
