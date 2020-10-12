@@ -141,14 +141,13 @@ class App extends Component {
                 { label: 'Front-End', value: 40 },
                 { label: 'Java', value: 10 },
                 { label: 'C#', value: 8 },
-                { label: 'MySQL', value: 5 },
-                { label: 'CSS', value: 5 },
+                { label: 'MySQL', value: 3 },
+                { label: 'CSS', value: 6 },
                 { label: 'HTML', value: 5 },
-                { label: 'JS', value: 5 },
+                { label: 'JS', value: 7 },
                 { label: 'Python', value: 5 },
                 { label: 'React', value: 3 },
                 { label: 'Angular', value: 20 },
-        
               ]}
             />
           </section>
@@ -256,15 +255,15 @@ class App extends Component {
           </section>
           <section id="ShowCasePage1">
             <div className="showcase-container">
-              <h3 className="showcase-title">Brexit Twitter Crawler:</h3>
+              <h3 className="showcase-text showcase-title">Brexit Twitter Crawler:</h3>
               <div className="showcase-gallery">
-                <img alt=""  className="showcase-page" src={page1} ></img>
+                <img alt="" className="showcase-page" src={page1}></img>
                 <div className="showcase-graphs">
-                  <img alt=""  className="showcase-linechart" src={lineChart}></img>
+                  <img alt="" className="showcase-linechart" src={lineChart}></img>
                   <div className="showcase-whitespace"></div>
-                  <img alt=""  className="showcase-piechart2" src={pieChart2}></img>
+                  <img alt="" className="showcase-piechart2" src={pieChart2}></img>
                   <div className="showcase-whitespace"></div>
-                  <img alt=""  className="showcase-piechart" src={pieChart}></img>
+                  <img alt="" className="showcase-piechart" src={pieChart}></img>
                 </div>
               </div>
               <div className="showcase-text">
@@ -273,6 +272,21 @@ class App extends Component {
                   <div className="showcase-link">
                     <a href="https://github.com/NoHara42/nohara42.github.io/blob/dev/src/assets/BrexitTwitterCrawler_DigitalHumanitiesProject.pdf">
                         See the paper here.
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="ShowCasePage2">
+            <div className="showcase-container">
+              <h3 className="showcase-title showcase-text">Stopping Cues:</h3>
+              <img class="showcase-gallery stopping-cue-gif" src={require("./assets/perfect.gif")}></img>
+              <div className="showcase-text">
+                <div className="showcase-description">We built a digitally-humane firefox extension, that combats the habits people form when using the infinite scroll. It displays a stopwatch that times how long you have been scrolling - it also randomly presents you with funny little messages that politely remind you to stop scrolling.
+                  <div className="showcase-link">
+                    <a href="https://addons.mozilla.org/en-US/firefox/addon/stoppingcues-alpha/">
+                      Try the extension here.
                     </a>
                   </div>
                 </div>

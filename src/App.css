@@ -291,7 +291,7 @@ h2 {
   height: 100%;
 }
 #ContactPage {
-  background: radial-gradient(at 50% 1000%, white, lightgrey);
+  background: radial-gradient(at 50% 0%, white, lightgrey);
   width: 100%;
   height: 100%;
   
@@ -400,7 +400,9 @@ h2 {
   font-weight: 600;
   grid-column: 2;
   grid-row: 1;
-  margin-bottom: 20px;
+  justify-self: flex-start;
+  margin-left: 50px;
+  margin-bottom:50px;
 }
 .showcase-description {
   font-family: "Maven Pro";
@@ -409,6 +411,10 @@ h2 {
   font-weight: 400;
   grid-column: 2;
   grid-row: 2;
+}
+.stopping-cue-gif {
+  max-width: 60vw;
+  height:auto;
 }
 
 /* Desktops and laptops ----------- */
@@ -485,7 +491,8 @@ h2 {
     font-weight: 600;
     grid-column: 2;
     grid-row: 1;
-    margin: 20px;
+    justify-self: flex-start;
+    margin-bottom:50px;
   }
   .showcase-description {
     font-family: "Maven Pro";
@@ -513,6 +520,8 @@ h2 {
   .showcase-container {
     display:flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
   }
   .showcase-gallery {
     display: flex;
@@ -521,7 +530,7 @@ h2 {
   .showcase-page {  
     grid-column: 1;
     grid-row: 1;
-    max-height: 80vh;
+    max-height: 60vh;
   }
   .showcase-graphs {
     display: none;
@@ -551,6 +560,7 @@ h2 {
     grid-column: 2;
     grid-row: 1;
     margin-bottom: 20px;
+    text-align: left;
   }
   .showcase-description {
     font-family: "Maven Pro";
