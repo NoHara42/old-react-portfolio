@@ -9,8 +9,10 @@
     "@weknow/react-bubble-chart-d3": "^1.0.12",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-loading-overlay": "^1.0.1",
     "react-on-visible": "^1.6.0",
     "react-scripts": "^3.4.3",
+    "react-spinners": "^0.9.0",
     "react-timeline-scribble": "^1.0.14",
     "react-vertical-timeline-component": "^2.6.2",
     "timeline": "^3.4.1"
