@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.94225dd0.chunk.css",
-    "main.js": "/static/js/main.174a09d1.chunk.js",
-    "main.js.map": "/static/js/main.174a09d1.chunk.js.map",
+    "main.css": "/static/css/main.6f19a88d.chunk.css",
+    "main.js": "/static/js/main.09070068.chunk.js",
+    "main.js.map": "/static/js/main.09070068.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.14da6479.js",
     "runtime-main.js.map": "/static/js/runtime-main.14da6479.js.map",
     "static/css/2.f681e662.chunk.css": "/static/css/2.f681e662.chunk.css",
-    "static/js/2.2004af99.chunk.js": "/static/js/2.2004af99.chunk.js",
-    "static/js/2.2004af99.chunk.js.map": "/static/js/2.2004af99.chunk.js.map",
+    "static/js/2.9270187b.chunk.js": "/static/js/2.9270187b.chunk.js",
+    "static/js/2.9270187b.chunk.js.map": "/static/js/2.9270187b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.65e4fe4e4ef32185645440b088c13863.js": "/precache-manifest.65e4fe4e4ef32185645440b088c13863.js",
+    "precache-manifest.0de84483cbd18331352c0edc0a99efcc.js": "/precache-manifest.0de84483cbd18331352c0edc0a99efcc.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.f681e662.chunk.css.map": "/static/css/2.f681e662.chunk.css.map",
-    "static/css/main.94225dd0.chunk.css.map": "/static/css/main.94225dd0.chunk.css.map",
-    "static/js/2.2004af99.chunk.js.LICENSE.txt": "/static/js/2.2004af99.chunk.js.LICENSE.txt",
+    "static/css/main.6f19a88d.chunk.css.map": "/static/css/main.6f19a88d.chunk.css.map",
+    "static/js/2.9270187b.chunk.js.LICENSE.txt": "/static/js/2.9270187b.chunk.js.LICENSE.txt",
     "static/media/Logo-Rohde_Schwarz.jpg": "/static/media/Logo-Rohde_Schwarz.3aa112ea.jpg",
     "static/media/aboutme.svg": "/static/media/aboutme.34fa810a.svg",
     "static/media/basislagerCentered.png": "/static/media/basislagerCentered.d54d9917.png",
@@ -29,6 +29,7 @@
     "static/media/mail-outline.svg": "/static/media/mail-outline.b25e5056.svg",
     "static/media/newspaper_sentiments_linechart.png": "/static/media/newspaper_sentiments_linechart.35bcea4e.png",
     "static/media/App.css": "/static/media/northern-lights-3273425.d55c5a7a.jpg",
+    "static/media/perfect.gif": "/static/media/perfect.44f1a96a.gif",
     "static/media/resizedprofilepicture.jpg": "/static/media/resizedprofilepicture.176f08fc.jpg",
     "static/media/showcase.svg": "/static/media/showcase.35ea078b.svg",
     "static/media/workexperience.svg": "/static/media/workexperience.17bc1ca0.svg"
@@ -36,8 +37,8 @@
   "entrypoints": [
     "static/js/runtime-main.14da6479.js",
     "static/css/2.f681e662.chunk.css",
-    "static/js/2.2004af99.chunk.js",
-    "static/css/main.94225dd0.chunk.css",
-    "static/js/main.174a09d1.chunk.js"
+    "static/js/2.9270187b.chunk.js",
+    "static/css/main.6f19a88d.chunk.css",
+    "static/js/main.09070068.chunk.js"
   ]
 }
